@@ -85,11 +85,11 @@ param
 
     # The GitHub repo to publish the release to and used to fill in release details for Nuget/PSGallery
     [Parameter(
-        Mandatory = $true
+        Mandatory = $false
     )]
     [ValidateNotNullOrEmpty()]
     [string]
-    $GitHubRepoName,
+    $GitHubRepoName = $Global:BrownserveRepoName,
 
     # GitHub token used during the StageRelease build, must have the following permissions:
     #   * Read/Write pull requests
