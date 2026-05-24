@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release
 
-## [v0.0.0](https://github.com) (1970-01-01)
+## [v0.1.0](https://github.com/Brownserve-UK/PSCommon/tree/v0.1.0) (2026-05-24)
 
-Placeholder entry. This will be replaced when you stage your first release.
+### Added
+
+- feat: set-up repo in [#1](https://github.com/Brownserve-UK/PSCommon/pull/1) by [@shoddyguard](https://github.com/shoddyguard)
+
+### Changed
+
+- chore: update repo to latest template in [#4](https://github.com/Brownserve-UK/PSCommon/pull/4) by [@shoddyguard](https://github.com/shoddyguard)
+
+### Security
+
+- sec: add codeowners in [#2](https://github.com/Brownserve-UK/PSCommon/pull/2) by [@shoddyguard](https://github.com/shoddyguard)
+

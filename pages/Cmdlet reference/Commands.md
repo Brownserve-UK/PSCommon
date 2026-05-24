@@ -2,7 +2,7 @@
 Module Name: Brownserve.PSCommon
 Module Guid: 389a0481-7500-4097-8550-c532d70b38dc
 Download Help Link: https://docs.brownserve.co.uk/Brownserve.PSCommon/Cmdlet%20reference/Commands/
-Help Version: 0.0.0
+Help Version: 0.1.0
 Locale: en-US
 ---
 
