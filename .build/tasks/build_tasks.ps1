@@ -135,7 +135,7 @@ if (!$GitHubRepoName)
 }
 else
 {
-    Write-Verbose "GitHubRepoName set to '$GitHubRepoName'"
+    Write-Host "GitHubRepoName set to '$GitHubRepoName'"
 }
 # Set up a bunch of variables that we'll use through the build, some of these are global as they're used in our tests too
 $global:BrownserveBuiltModuleDirectory = Join-Path $global:BrownserveRepoBuildOutputDirectory $ModuleName
