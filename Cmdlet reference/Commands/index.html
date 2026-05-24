@@ -1,0 +1,1916 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.brownserve.co.uk/Brownserve.PSCommon/Cmdlet%20reference/Commands/">
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../Assert-Command/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Commands - Brownserve.PSCommon</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#brownservepscommon-module" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Brownserve.PSCommon" class="md-header__button md-logo" aria-label="Brownserve.PSCommon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brownserve.PSCommon
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Brownserve-UK/Brownserve.PSCommon" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Brownserve-UK/Brownserve.PSCommon
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Brownserve.PSCommon" class="md-nav__button md-logo" aria-label="Brownserve.PSCommon" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Brownserve.PSCommon
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Brownserve-UK/Brownserve.PSCommon" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Brownserve-UK/Brownserve.PSCommon
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Commands
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brownservepscommon-cmdlets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brownserve.PSCommon Cmdlets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brownserve.PSCommon Cmdlets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assert-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertto-blockcomment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConvertTo-BlockComment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertto-sortedhashtable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConvertTo-SortedHashtable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format-Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get-Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-chocolateypackage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install-ChocolateyPackage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-convertfromyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-ConvertFromYaml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-converttoyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-ConvertToYaml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-downloadmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-DownloadMethod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-nativecommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-NativeCommand
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-hashtable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge-Hashtable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-brownservetemporarydirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New-BrownserveTemporaryDirectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-brownservetemporaryfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New-BrownserveTemporaryFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-configurationfromfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read-ConfigurationFromFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove-Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Select-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-lineendings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set-LineEndings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split-URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-Administrator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-numeric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-Numeric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-operatingsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-OperatingSystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Assert-Command/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assert-Command
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Assert-Directory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assert-Directory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Assert-Path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Assert-Path
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ConvertTo-BlockComment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConvertTo-BlockComment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ConvertTo-SortedHashtable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ConvertTo-SortedHashtable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Format-BrownserveContent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Format-BrownserveContent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Format-Markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Format-Markdown
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Get-BrownserveContent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-BrownserveContent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Get-Response/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Get-Response
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Install-ChocolateyPackage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Install-ChocolateyPackage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invoke-ConvertFromYaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoke-ConvertFromYaml
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invoke-ConvertToYaml/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoke-ConvertToYaml
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invoke-DownloadMethod/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoke-DownloadMethod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Invoke-NativeCommand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Invoke-NativeCommand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Merge-Hashtable/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Merge-Hashtable
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../New-BrownserveTemporaryDirectory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New-BrownserveTemporaryDirectory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../New-BrownserveTemporaryFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    New-BrownserveTemporaryFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Read-ConfigurationFromFile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Read-ConfigurationFromFile
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Remove-Markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Remove-Markdown
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Select-BrownserveContent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Select-BrownserveContent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set-BrownserveContent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set-BrownserveContent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set-LineEndings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set-LineEndings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Split-URI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Split-URI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Test-Administrator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-Administrator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Test-Numeric/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-Numeric
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Test-OperatingSystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test-OperatingSystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#brownservepscommon-cmdlets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brownserve.PSCommon Cmdlets
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Brownserve.PSCommon Cmdlets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assert-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Command
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assert-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assert-Path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertto-blockcomment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConvertTo-BlockComment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertto-sortedhashtable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ConvertTo-SortedHashtable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format-Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Get-Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-chocolateypackage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install-ChocolateyPackage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-convertfromyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-ConvertFromYaml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-converttoyaml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-ConvertToYaml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-downloadmethod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-DownloadMethod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invoke-nativecommand" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Invoke-NativeCommand
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-hashtable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Merge-Hashtable
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-brownservetemporarydirectory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New-BrownserveTemporaryDirectory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-brownservetemporaryfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New-BrownserveTemporaryFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-configurationfromfile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read-ConfigurationFromFile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove-Markdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Select-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-brownservecontent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set-BrownserveContent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-lineendings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set-LineEndings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split-uri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Split-URI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-administrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-Administrator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-numeric" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-Numeric
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-operatingsystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test-OperatingSystem
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="brownservepscommon-module">Brownserve.PSCommon Module<a class="headerlink" href="#brownservepscommon-module" title="Permanent link">&para;</a></h1>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>TBD</p>
+<h2 id="brownservepscommon-cmdlets">Brownserve.PSCommon Cmdlets<a class="headerlink" href="#brownservepscommon-cmdlets" title="Permanent link">&para;</a></h2>
+<h3 id="assert-command"><a href="../Assert-Command/">Assert-Command</a><a class="headerlink" href="#assert-command" title="Permanent link">&para;</a></h3>
+<p>Ensures the given command exists and is available to the current PowerShell session</p>
+<h3 id="assert-directory"><a href="../Assert-Directory/">Assert-Directory</a><a class="headerlink" href="#assert-directory" title="Permanent link">&para;</a></h3>
+<p>Ensures that a directory is valid</p>
+<h3 id="assert-path"><a href="../Assert-Path/">Assert-Path</a><a class="headerlink" href="#assert-path" title="Permanent link">&para;</a></h3>
+<p>Ensures a given path exists.</p>
+<h3 id="convertto-blockcomment"><a href="../ConvertTo-BlockComment/">ConvertTo-BlockComment</a><a class="headerlink" href="#convertto-blockcomment" title="Permanent link">&para;</a></h3>
+<p>Converts a given text string into a block comment</p>
+<h3 id="convertto-sortedhashtable"><a href="../ConvertTo-SortedHashtable/">ConvertTo-SortedHashtable</a><a class="headerlink" href="#convertto-sortedhashtable" title="Permanent link">&para;</a></h3>
+<p>Converts a given hashtable to an alphabetically sorted hashtable</p>
+<h3 id="format-brownservecontent"><a href="../Format-BrownserveContent/">Format-BrownserveContent</a><a class="headerlink" href="#format-brownservecontent" title="Permanent link">&para;</a></h3>
+<p>Formats a given string to be compatible with the various *-BrownserveContent cmdlets.</p>
+<h3 id="format-markdown"><a href="../Format-Markdown/">Format-Markdown</a><a class="headerlink" href="#format-markdown" title="Permanent link">&para;</a></h3>
+<p>Formats a markdown file to ensure it follows the markdownlint rules.</p>
+<h3 id="get-brownservecontent"><a href="../Get-BrownserveContent/">Get-BrownserveContent</a><a class="headerlink" href="#get-brownservecontent" title="Permanent link">&para;</a></h3>
+<p>Wrapper for Get-Content that returns the content in a format that is easier to work with.</p>
+<h3 id="get-response"><a href="../Get-Response/">Get-Response</a><a class="headerlink" href="#get-response" title="Permanent link">&para;</a></h3>
+<p>Prompts a user for a response.</p>
+<h3 id="install-chocolateypackage"><a href="../Install-ChocolateyPackage/">Install-ChocolateyPackage</a><a class="headerlink" href="#install-chocolateypackage" title="Permanent link">&para;</a></h3>
+<p>Helper cmdlet for installing Chocolatey packages programmatically</p>
+<h3 id="invoke-convertfromyaml"><a href="../Invoke-ConvertFromYaml/">Invoke-ConvertFromYaml</a><a class="headerlink" href="#invoke-convertfromyaml" title="Permanent link">&para;</a></h3>
+<p>Wrapper cmdlet for ConvertFrom-Yaml</p>
+<h3 id="invoke-converttoyaml"><a href="../Invoke-ConvertToYaml/">Invoke-ConvertToYaml</a><a class="headerlink" href="#invoke-converttoyaml" title="Permanent link">&para;</a></h3>
+<p>Wrapper cmdlet for ConvertTo-YAML</p>
+<h3 id="invoke-downloadmethod"><a href="../Invoke-DownloadMethod/">Invoke-DownloadMethod</a><a class="headerlink" href="#invoke-downloadmethod" title="Permanent link">&para;</a></h3>
+<p>Downloads a file using the best method available depending on operating system.</p>
+<h3 id="invoke-nativecommand"><a href="../Invoke-NativeCommand/">Invoke-NativeCommand</a><a class="headerlink" href="#invoke-nativecommand" title="Permanent link">&para;</a></h3>
+<p>Invokes a native command while gracefully handling the output and error streams.</p>
+<h3 id="merge-hashtable"><a href="../Merge-Hashtable/">Merge-Hashtable</a><a class="headerlink" href="#merge-hashtable" title="Permanent link">&para;</a></h3>
+<p>Merges two hashtables together</p>
+<h3 id="new-brownservetemporarydirectory"><a href="../New-BrownserveTemporaryDirectory/">New-BrownserveTemporaryDirectory</a><a class="headerlink" href="#new-brownservetemporarydirectory" title="Permanent link">&para;</a></h3>
+<p>Creates a temporary directory</p>
+<h3 id="new-brownservetemporaryfile"><a href="../New-BrownserveTemporaryFile/">New-BrownserveTemporaryFile</a><a class="headerlink" href="#new-brownservetemporaryfile" title="Permanent link">&para;</a></h3>
+<p>Creates a temporary file in a known good location.</p>
+<h3 id="read-configurationfromfile"><a href="../Read-ConfigurationFromFile/">Read-ConfigurationFromFile</a><a class="headerlink" href="#read-configurationfromfile" title="Permanent link">&para;</a></h3>
+<p>Reads values from a configuration file</p>
+<h3 id="remove-markdown"><a href="../Remove-Markdown/">Remove-Markdown</a><a class="headerlink" href="#remove-markdown" title="Permanent link">&para;</a></h3>
+<p>This cmdlet removes markdown from a string.</p>
+<h3 id="select-brownservecontent"><a href="../Select-BrownserveContent/">Select-BrownserveContent</a><a class="headerlink" href="#select-brownservecontent" title="Permanent link">&para;</a></h3>
+<p>Selects text from a given file</p>
+<h3 id="set-brownservecontent"><a href="../Set-BrownserveContent/">Set-BrownserveContent</a><a class="headerlink" href="#set-brownservecontent" title="Permanent link">&para;</a></h3>
+<p>Writes the contents of a file to disk.</p>
+<h3 id="set-lineendings"><a href="../Set-LineEndings/">Set-LineEndings</a><a class="headerlink" href="#set-lineendings" title="Permanent link">&para;</a></h3>
+<p>Sets the line endings of a file to either CRLF or LF</p>
+<h3 id="split-uri"><a href="../Split-URI/">Split-URI</a><a class="headerlink" href="#split-uri" title="Permanent link">&para;</a></h3>
+<p>Takes a given URI and splits it into its constituent parts.</p>
+<h3 id="test-administrator"><a href="../Test-Administrator/">Test-Administrator</a><a class="headerlink" href="#test-administrator" title="Permanent link">&para;</a></h3>
+<p>A simple function for testing if a user is running with administrator/root privileges or not.</p>
+<h3 id="test-numeric"><a href="../Test-Numeric/">Test-Numeric</a><a class="headerlink" href="#test-numeric" title="Permanent link">&para;</a></h3>
+<p>Tests if a given object is numeric.</p>
+<h3 id="test-operatingsystem"><a href="../Test-OperatingSystem/">Test-OperatingSystem</a><a class="headerlink" href="#test-operatingsystem" title="Permanent link">&para;</a></h3>
+<p>Quick way of terminating scripts when they are running on an incompatible OS.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
