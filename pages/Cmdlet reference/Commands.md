@@ -16,104 +16,104 @@ TBD
 
 ### [Assert-Command](Assert-Command.md)
 
-{{ Fill in the Description }}
+Ensures the given command exists and is available to the current PowerShell session
 
 ### [Assert-Directory](Assert-Directory.md)
 
-{{ Fill in the Description }}
+Ensures that a directory is valid
 
 ### [Assert-Path](Assert-Path.md)
 
-{{ Fill in the Description }}
+Ensures a given path exists.
 
 ### [ConvertTo-BlockComment](ConvertTo-BlockComment.md)
 
-{{ Fill in the Description }}
+Converts a given text string into a block comment
 
 ### [ConvertTo-SortedHashtable](ConvertTo-SortedHashtable.md)
 
-{{ Fill in the Description }}
+Converts a given hashtable to an alphabetically sorted hashtable
 
 ### [Format-BrownserveContent](Format-BrownserveContent.md)
 
-{{ Fill in the Description }}
+Formats a given string to be compatible with the various *-BrownserveContent cmdlets.
 
 ### [Format-Markdown](Format-Markdown.md)
 
-{{ Fill in the Description }}
+Formats a markdown file to ensure it follows the markdownlint rules.
 
 ### [Get-BrownserveContent](Get-BrownserveContent.md)
 
-{{ Fill in the Description }}
+Wrapper for Get-Content that returns the content in a format that is easier to work with.
 
 ### [Get-Response](Get-Response.md)
 
-{{ Fill in the Description }}
+Prompts a user for a response.
 
 ### [Install-ChocolateyPackage](Install-ChocolateyPackage.md)
 
-{{ Fill in the Description }}
+Helper cmdlet for installing Chocolatey packages programmatically
 
 ### [Invoke-ConvertFromYaml](Invoke-ConvertFromYaml.md)
 
-{{ Fill in the Description }}
+Wrapper cmdlet for ConvertFrom-Yaml
 
 ### [Invoke-ConvertToYaml](Invoke-ConvertToYaml.md)
 
-{{ Fill in the Description }}
+Wrapper cmdlet for ConvertTo-YAML
 
 ### [Invoke-DownloadMethod](Invoke-DownloadMethod.md)
 
-{{ Fill in the Description }}
+Downloads a file using the best method available depending on operating system.
 
 ### [Invoke-NativeCommand](Invoke-NativeCommand.md)
 
-{{ Fill in the Description }}
+Invokes a native command while gracefully handling the output and error streams.
 
 ### [Merge-Hashtable](Merge-Hashtable.md)
 
-{{ Fill in the Description }}
+Merges two hashtables together
 
 ### [New-BrownserveTemporaryDirectory](New-BrownserveTemporaryDirectory.md)
 
-{{ Fill in the Description }}
+Creates a temporary directory
 
 ### [New-BrownserveTemporaryFile](New-BrownserveTemporaryFile.md)
 
-{{ Fill in the Description }}
+Creates a temporary file in a known good location.
 
 ### [Read-ConfigurationFromFile](Read-ConfigurationFromFile.md)
 
-{{ Fill in the Description }}
+Reads values from a configuration file
 
 ### [Remove-Markdown](Remove-Markdown.md)
 
-{{ Fill in the Description }}
+This cmdlet removes markdown from a string.
 
 ### [Select-BrownserveContent](Select-BrownserveContent.md)
 
-{{ Fill in the Description }}
+Selects text from a given file
 
 ### [Set-BrownserveContent](Set-BrownserveContent.md)
 
-{{ Fill in the Description }}
+Writes the contents of a file to disk.
 
 ### [Set-LineEndings](Set-LineEndings.md)
 
-{{ Fill in the Description }}
+Sets the line endings of a file to either CRLF or LF
 
 ### [Split-URI](Split-URI.md)
 
-{{ Fill in the Description }}
+Takes a given URI and splits it into its constituent parts.
 
 ### [Test-Administrator](Test-Administrator.md)
 
-{{ Fill in the Description }}
+A simple function for testing if a user is running with administrator/root privileges or not.
 
 ### [Test-Numeric](Test-Numeric.md)
 
-{{ Fill in the Description }}
+Tests if a given object is numeric.
 
 ### [Test-OperatingSystem](Test-OperatingSystem.md)
 
-{{ Fill in the Description }}
+Quick way of terminating scripts when they are running on an incompatible OS.
