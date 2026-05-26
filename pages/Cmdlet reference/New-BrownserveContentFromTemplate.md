@@ -56,6 +56,24 @@ Reads the template and replaces all occurrences of `###REPO_NAME###` and
 
 ## PARAMETERS
 
+### -Substitutions
+
+A hashtable of placeholder keys and their replacement values. Each key must match a
+`###KEY###` placeholder in the template. Keys not present in the template are silently
+ignored.
+
+```yaml
+Type: Hashtable
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -TemplateDirectory
 
 The path to the directory containing the template file.
@@ -88,24 +106,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Substitutions
-
-A hashtable of placeholder keys and their replacement values. Each key must match a
-`###KEY###` placeholder in the template. Keys not present in the template are silently
-ignored.
-
-```yaml
-Type: Hashtable
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: 2
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### CommonParameters
 
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutBuffer, -OutVariable, -PipelineVariable, -ProgressAction, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
@@ -116,7 +116,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### System.String
+### System.Object
 
 ## NOTES
 
