@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release
 
+## [v0.2.0](https://github.com/Brownserve-UK/PSCommon/tree/v0.2.0) (2026-05-26)
+
+### Added
+
+- feat: add New-BrownserveContentFromTemplate cmdlet in [#11](https://github.com/Brownserve-UK/PSCommon/pull/11) by [@shoddyguard](https://github.com/shoddyguard)
+- feat: drop Brownserve.PSTools in [#8](https://github.com/Brownserve-UK/PSCommon/pull/8) by [@shoddyguard](https://github.com/shoddyguard)
+- feat(test): add additional tests to the module. in [#7](https://github.com/Brownserve-UK/PSCommon/pull/7) by [@shoddyguard](https://github.com/shoddyguard)
+
+### Fixed
+
+- docs: add PR template and refactor contributing guide in [#10](https://github.com/Brownserve-UK/PSCommon/pull/10) by [@shoddyguard](https://github.com/shoddyguard)
+- fix(module): ensure module description is set correctly. in [#9](https://github.com/Brownserve-UK/PSCommon/pull/9) by [@shoddyguard](https://github.com/shoddyguard)
+- docs: flesh out README and bring in missing docs in [#6](https://github.com/Brownserve-UK/PSCommon/pull/6) by [@shoddyguard](https://github.com/shoddyguard)
+
+
 ## [v0.1.0](https://github.com/Brownserve-UK/PSCommon/tree/v0.1.0) (2026-05-24)
 
 ### Added
