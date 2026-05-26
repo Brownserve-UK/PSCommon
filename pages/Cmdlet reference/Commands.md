@@ -74,6 +74,10 @@ Invokes a native command while gracefully handling the output and error streams.
 
 Merges two hashtables together
 
+### [New-BrownserveContentFromTemplate](New-BrownserveContentFromTemplate.md)
+
+Generates content from a template file, optionally substituting placeholder values.
+
 ### [New-BrownserveTemporaryDirectory](New-BrownserveTemporaryDirectory.md)
 
 Creates a temporary directory
