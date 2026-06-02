@@ -8,11 +8,11 @@ The module is published as both a NuGet package and a PSGallery module for easy 
 
 ## What's included?
 
-Please see the [module documentation](https://docs.brownserve.co.uk/Brownserve.PSCommon/) for a full list of cmdlets and their usage.
+Please see the [module documentation](https://docs.brownserve.co.uk/PSCommon/) for a full list of cmdlets and their usage.
 
 ## How to use
 
-See the [getting started guide](https://docs.brownserve.co.uk/Brownserve.PSCommon/getting-started/) for installation and setup instructions, or the [module reference](https://docs.brownserve.co.uk/Brownserve.PSCommon/reference/Brownserve.PSCommon/) for a full list of available cmdlets.
+See the [getting started guide](https://docs.brownserve.co.uk/PSCommon/getting-started/) for installation and setup instructions, or the [module reference](https://docs.brownserve.co.uk/PSCommon/reference/PSCommon/) for a full list of available cmdlets.
 
 ## Contributing
 
