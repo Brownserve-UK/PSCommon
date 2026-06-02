@@ -10,7 +10,7 @@ Locale: en-US
 
 ## Description
 
-TBD
+Common utility cmdlets for file I/O, content formatting, assertions, and cross-platform helpers used across Brownserve projects.
 
 ## Brownserve.PSCommon Cmdlets
 
