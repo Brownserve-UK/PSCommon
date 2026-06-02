@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Release
 
+## [v0.2.1](https://github.com/Brownserve-UK/PSCommon/tree/v0.2.1) (2026-06-02)
+
+### Fixed
+
+- docs: update documentation/readme in [#13](https://github.com/Brownserve-UK/PSCommon/pull/13) by [@shoddyguard](https://github.com/shoddyguard)
+
+
 ## [v0.2.0](https://github.com/Brownserve-UK/PSCommon/tree/v0.2.0) (2026-05-26)
 
 ### Added
