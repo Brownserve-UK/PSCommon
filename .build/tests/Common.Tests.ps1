@@ -132,6 +132,29 @@ Describe 'Common cmdlets' {
         }
     }
 
+    Context 'Select-BrownserveContent' {
+        BeforeAll {
+            $script:SelectContentPath = Join-Path $TestDrive 'select.txt'
+            Set-Content -Path $script:SelectContentPath -Value @('one', 'two', '## Start', 'three', 'four', '## Stop', 'five')
+        }
+        It 'should return content after a marker' {
+            $Result = Select-BrownserveContent -Path $script:SelectContentPath -After '## Stop'
+            $Result.Content | Should -Be @('five', '')
+        }
+        It 'should return content before a marker when only -Before is given' {
+            $Result = Select-BrownserveContent -Path $script:SelectContentPath -Before '## Start'
+            $Result.Content | Should -Be @('one', 'two')
+        }
+        It 'should return the first line when -Before matches the second line' {
+            $Result = Select-BrownserveContent -Path $script:SelectContentPath -Before 'two'
+            $Result.Content | Should -Be @('one')
+        }
+        It 'should return content between two markers' {
+            $Result = Select-BrownserveContent -Path $script:SelectContentPath -After '## Start' -Before '## Stop'
+            $Result.Content | Should -Be @('three', 'four')
+        }
+    }
+
     Context 'Assert-Path' {
         It 'should not throw when the path exists' {
             { Assert-Path -Path $TestDrive } | Should -Not -Throw
