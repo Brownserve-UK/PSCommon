@@ -1566,7 +1566,7 @@ pipeline for working with file content.</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$myFile</span> <span class="p">=</span> <span class="nb">Get-BrownserveContent</span> <span class="n">-Path</span> <span class="n">C</span><span class="p">:\</span><span class="n">MyFile</span><span class="p">.</span><span class="n">txt</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$myFile</span><span class="p">.</span><span class="n">Content</span> <span class="p">+=</span> <span class="s2">&quot;Hello, world!&quot;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nv">$myFile</span><span class="p">.</span><span class="n">Content</span> <span class="p">+=</span> <span class="s2">"Hello, world!"</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nv">$myFile</span> <span class="p">|</span> <span class="nb">Set-BrownserveContent</span>
 </code></pre></div>
 <p>This would append "Hello, world!" to the end of <code>MyFile.txt</code></p>

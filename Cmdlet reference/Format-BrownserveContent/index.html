@@ -1543,8 +1543,8 @@ This allows us to ensure files get written with the correct formatting and works
 line ending handling between Windows and Linux.</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$myString</span> <span class="p">=</span> <span class="s2">&quot;Hello,world!</span><span class="se">`n</span><span class="s2">I am a string with new lines</span><span class="se">`n</span><span class="s2">!&quot;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Format-BrownserveContent</span> <span class="n">-Content</span> <span class="nv">$myString</span> <span class="n">-LineEnding</span> <span class="s1">&#39;CRLF&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nv">$myString</span> <span class="p">=</span> <span class="s2">"Hello,world!</span><span class="se">`n</span><span class="s2">I am a string with new lines</span><span class="se">`n</span><span class="s2">!"</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">Format-BrownserveContent</span> <span class="n">-Content</span> <span class="nv">$myString</span> <span class="n">-LineEnding</span> <span class="s1">'CRLF'</span>
 </code></pre></div>
 <p>This would remove all line endings from the string and store the text in a special object.
 Anytime the user calls <code>$myString.ToString()</code> the resulting object will use the <code>CRLF</code> endings</p>

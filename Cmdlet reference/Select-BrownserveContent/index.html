@@ -1697,15 +1697,15 @@ these can be either a line number or a string/regex.
 You can pipe content from Get-BrownserveContent into this cmdlet.</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1">Example 1<a class="headerlink" href="#example-1" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Select-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">&quot;C:\temp\test.txt&quot;</span> <span class="n">-After</span> <span class="n">5</span> <span class="n">-Before</span> <span class="n">10</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Select-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">"C:\temp\test.txt"</span> <span class="n">-After</span> <span class="n">5</span> <span class="n">-Before</span> <span class="n">10</span>
 </code></pre></div>
 <p>This will return the content of the file <code>C:\temp\test.txt</code> from line 5 to 10</p>
 <h3 id="example-2">Example 2<a class="headerlink" href="#example-2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">&quot;C:\temp\test.txt&quot;</span> <span class="p">|</span> <span class="nb">Select-BrownserveContent</span> <span class="n">-After</span> <span class="n">5</span> <span class="n">-Before</span> <span class="n">10</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">Get-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">"C:\temp\test.txt"</span> <span class="p">|</span> <span class="nb">Select-BrownserveContent</span> <span class="n">-After</span> <span class="n">5</span> <span class="n">-Before</span> <span class="n">10</span>
 </code></pre></div>
 <p>This will return the content of the file <code>C:\temp\test.txt</code> from line 5 to 10</p>
 <h3 id="example-3">Example 3<a class="headerlink" href="#example-3" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Get-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">&quot;C:\temp\test.txt&quot;</span> <span class="p">|</span> <span class="nb">Select-BrownserveContent</span> <span class="n">-After</span> <span class="s2">&quot;##Start&quot;</span> <span class="n">-Before</span> <span class="s2">&quot;##End&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">Get-BrownserveContent</span> <span class="n">-Path</span> <span class="s2">"C:\temp\test.txt"</span> <span class="p">|</span> <span class="nb">Select-BrownserveContent</span> <span class="n">-After</span> <span class="s2">"##Start"</span> <span class="n">-Before</span> <span class="s2">"##End"</span>
 </code></pre></div>
 <p>This will return the content of the file <code>C:\temp\test.txt</code> from the line after <code>##Start</code> to the line before <code>##End</code></p>
 <h2 id="parameters">PARAMETERS<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>

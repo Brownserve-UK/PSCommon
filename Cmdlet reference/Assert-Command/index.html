@@ -1608,15 +1608,15 @@
 <p>Ensures the given command exists and is available to the current PowerShell session</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1-command-that-is-present">Example 1: Command that is present<a class="headerlink" href="#example-1-command-that-is-present" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Assert-Command</span> <span class="s1">&#39;pwsh&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Assert-Command</span> <span class="s1">'pwsh'</span>
 </code></pre></div>
 <p>This command would pass successfully as the command exists</p>
 <h3 id="example-2-command-that-is-not-present">Example 2: Command that is not present<a class="headerlink" href="#example-2-command-that-is-not-present" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Assert-Command</span> <span class="s1">&#39;notArealCommand&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Assert-Command</span> <span class="s1">'notArealCommand'</span>
 </code></pre></div>
 <p>This command would return a terminating error as the command doesn't exist</p>
 <h3 id="example-3-check-multiple-commands">Example 3: Check multiple commands<a class="headerlink" href="#example-3-check-multiple-commands" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Assert-Command</span> <span class="s1">&#39;notArealCommand&#39;</span><span class="p">,</span> <span class="s1">&#39;pwsh&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Assert-Command</span> <span class="s1">'notArealCommand'</span><span class="p">,</span> <span class="s1">'pwsh'</span>
 </code></pre></div>
 <p>This command would return a terminating error as one of the commands does not exist</p>
 <h2 id="parameters">PARAMETERS<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>

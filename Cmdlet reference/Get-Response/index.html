@@ -1654,16 +1654,16 @@
 this is useful in interactive script where data needs to be given in the correct format.</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1-strings">EXAMPLE 1: Strings<a class="headerlink" href="#example-1-strings" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">&quot;What is your name?&quot;</span> <span class="n">-ResponseType</span> <span class="s2">&quot;string&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">"What is your name?"</span> <span class="n">-ResponseType</span> <span class="s2">"string"</span>
 </code></pre></div>
 <p>This would display <code>What is your name?</code> on the screen, whatever the user enters will be returned as a string.</p>
 <h3 id="example-2-booleans">EXAMPLE 2: Booleans<a class="headerlink" href="#example-2-booleans" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">&quot;Do you like pineapple on pizza?&quot;</span> <span class="n">-ResponseType</span> <span class="s2">&quot;bool&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">"Do you like pineapple on pizza?"</span> <span class="n">-ResponseType</span> <span class="s2">"bool"</span>
 </code></pre></div>
 <p>This would display <code>Do you like pineapple on pizza? [y]es/[n]o:</code> on the screen
 If the user enters 'yes' then $true will be returned, if they enter 'no' then $false will be returned</p>
 <h3 id="example-3-arrays">EXAMPLE 3: Arrays<a class="headerlink" href="#example-3-arrays" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">&quot;What do you like on your pizza?&quot;</span> <span class="n">-ResponseType</span> <span class="s2">&quot;array&quot;</span> <span class="n">-Mandatory</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">Get-Response</span> <span class="n">-Prompt</span> <span class="s2">"What do you like on your pizza?"</span> <span class="n">-ResponseType</span> <span class="s2">"array"</span> <span class="n">-Mandatory</span>
 </code></pre></div>
 <p>This would display "What do you like on your pizza? [if specifying more than one separate with a comma]" to the screen.
 The resulting comma separated list will be split into an array.

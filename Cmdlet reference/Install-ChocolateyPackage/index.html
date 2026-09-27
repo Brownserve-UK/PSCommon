@@ -1759,28 +1759,28 @@ It's primary use case is for cloud based build agents that may not necessarily h
 Given that Chocolatey is package manager for Windows this cmdlet is Windows Only.</p>
 <h2 id="examples">EXAMPLES<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="example-1-install-a-given-package">Example 1: Install a given package<a class="headerlink" href="#example-1-install-a-given-package" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="nb">Install-ChocolateyPackage</span> <span class="n">-PackageName</span> <span class="s1">&#39;awscli&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="nb">Install-ChocolateyPackage</span> <span class="n">-PackageName</span> <span class="s1">'awscli'</span>
 </code></pre></div>
 <p>This would install the latest version of the <code>awscli</code> on the local system</p>
 <h3 id="example-2-upgrade-a-package-if-its-already-installed">Example 2: Upgrade a package if it's already installed<a class="headerlink" href="#example-2-upgrade-a-package-if-its-already-installed" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="nb">Install-ChocolateyPackage</span> <span class="n">-PackageName</span> <span class="s1">&#39;awscli&#39;</span> <span class="n">-Upgrade</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="nb">Install-ChocolateyPackage</span> <span class="n">-PackageName</span> <span class="s1">'awscli'</span> <span class="n">-Upgrade</span>
 </code></pre></div>
 <p>This would install the latest version of the <code>awscli</code> on the local system if it is not already installed, if it is installed but is not the latest version it will be updated</p>
 <h3 id="example-3-bulk-install-packages">Example 3: Bulk install packages<a class="headerlink" href="#example-3-bulk-install-packages" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\&gt;</span> <span class="p">@(</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="no">[PSCustomObject]</span><span class="p">@{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="n">name</span> <span class="p">=</span> <span class="s1">&#39;awscli&#39;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">version</span> <span class="p">=</span> <span class="s1">&#39;any&#39;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="n">name</span> <span class="p">=</span> <span class="s1">'awscli'</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="n">version</span> <span class="p">=</span> <span class="s1">'any'</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="p">}],</span>
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="no">[PSCustomObject]</span><span class="p">@{</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="n">Name</span> <span class="p">=</span> <span class="s1">&#39;git&#39;</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="n">version</span> <span class="p">=</span> <span class="s1">&#39;1.0.0&#39;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>        <span class="n">Name</span> <span class="p">=</span> <span class="s1">'git'</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>        <span class="n">version</span> <span class="p">=</span> <span class="s1">'1.0.0'</span>
 <a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="p">}]</span>
 <a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="p">)</span> <span class="p">|</span> <span class="nb">Install-ChocolateyPackages</span>
 </code></pre></div>
 <p>This would install the latest version of the <code>awscli</code> on the local system and version <code>1.0.0</code> of git if they do not already exist</p>
 <h3 id="example-4-passing-in-from-a-csv">Example 4: Passing in from a CSV<a class="headerlink" href="#example-4-passing-in-from-a-csv" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">packages</span><span class="p">\&gt;</span> <span class="nb">Import-CSV</span> <span class="s1">&#39;choco_packages.csv&#39;</span> <span class="p">|</span> <span class="nb">Install-ChocolateyPackages</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">packages</span><span class="p">\&gt;</span> <span class="nb">Import-CSV</span> <span class="s1">'choco_packages.csv'</span> <span class="p">|</span> <span class="nb">Install-ChocolateyPackages</span>
 </code></pre></div>
 <p>Providing the csv file was structured correctly this would bulk install any packages from the CSV file.</p>
 <h2 id="parameters">PARAMETERS<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
