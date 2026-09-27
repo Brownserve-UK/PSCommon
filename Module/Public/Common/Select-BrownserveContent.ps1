@@ -199,7 +199,7 @@ function Select-BrownserveContent
                 throw $NotFoundError
             }
 
-            if ($BeginTextLine -and $EndTextLine)
+            if (($null -ne $BeginTextLine) -and ($null -ne $EndTextLine))
             {
                 <#
                     Due to the way we work out the start and end of the text block we want to return we can end up in a couple
@@ -232,7 +232,7 @@ function Select-BrownserveContent
                         Otherwise we return the content of the line.
                     #>
                     $BeginTextLineContent = $SplitContent[$BeginTextLine]
-                    if ($BeginTextLineContent -match $After)
+                    if (($null -ne $After) -and ($BeginTextLineContent -match $After))
                     {
                         Write-Verbose 'BeginTextLine matches After'
                         Write-Verbose 'Returning empty string'
